@@ -5,6 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 // Aplikacja Spring: Spring Boot Application
 public class PageSetup {
 
+    // typy proste a typy obiektowe
     String projectLocation = System.getProperty("user.dir");
     // deklaracja a definicja w programowaniu
     ChromeDriver driver;
@@ -21,6 +22,6 @@ public class PageSetup {
     @AfterEach
     public void teardown() {
         // roznica pomiedzy driver.close() a driver.quit()
-//        driver.quit();
+        driver.quit();
     }
 }
